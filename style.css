@@ -1,0 +1,176 @@
+:root {
+	--text-color: #f5f7fa;
+	--card-bg: rgba(0, 0, 0, 0.45);
+	--overlay-bg: rgba(8, 14, 24, 0.45);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-family: "kaushan";
+	color: var(--text-color);
+	background-image: url("sunsunsun.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.page-overlay {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	background: var(--overlay-bg);
+	padding: 1.5rem;
+}
+
+.site-header,
+.site-footer {
+	text-align: center;
+}
+
+.site-main {
+	display: grid;
+	place-items: center;
+	padding: 2rem 0;
+}
+
+.content-card {
+	width: min(700px, 100%);
+	background: var(--card-bg);
+	border-radius: 14px;
+	padding: 1.5rem;
+	backdrop-filter: blur(2px);
+}
+
+@font-face {
+  font-family: kaushan;
+  src: url(Jua-Regular.ttf);
+}
+
+.upload-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	align-items: center;
+	margin-bottom: 1.25rem;
+}
+
+.upload-label {
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+input[type="file"] {
+	max-width: 100%;
+	color: var(--text-color);
+}
+
+h1,
+h2,
+p {
+	margin-top: 0;
+}
+
+.top-right-link {
+	position: fixed;
+	top: 1rem;
+	right: 1.25rem;
+	z-index: 10;
+	font-family: "kaushan";
+	font-size: 2rem;
+	line-height: 1.5;
+	text-align: right;
+}
+
+.bottom-bar {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 2rem 1.5rem;
+	background: transparent;
+	color: var(--text-color);
+}
+
+.bottom-right {
+	margin-left: auto;
+	max-width: 70rem;
+	font-family: "kaushan";
+	font-size: 2rem;
+	line-height: 1.4;
+	text-align: right;
+}
+
+.bottom-right p {
+	margin: 0;
+	font: inherit;
+}
+
+.bottom-link {
+	color: var(--text-color);
+	text-decoration: none;
+	font-weight: 400;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+@media (max-width: 640px) {
+	.top-right-link {
+		top: 0.75rem;
+		right: 0.85rem;
+		font-size: 2rem;
+	}
+	.bottom-bar {
+		padding: 1rem 0.85rem;
+	}
+	.bottom-right {
+		max-width: none;
+		font-size: 1.5rem;
+		line-height: 1.45;
+		text-align: right;
+	}
+	.bottom-right p {
+		font: inherit;
+	}
+    @media (max-width: 640px) {
+	.bottom-left {
+		max-width: none;
+		font-size: 1.5rem;
+		line-height: 1.45;
+		text-align: left;
+	}
+	.bottom-left p {
+		font: inherit;
+	}
+    }
+}
+
+.bottom-bar {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 2rem 1.5rem;
+	background: transparent;
+	color: var(--text-color);
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.bottom-left {
+	max-width: 30rem;
+	font-family: "kaushan";
+	font-size: 2rem;
+	line-height: 1.4;
+	text-align: left;
+}
+
+.bottom-left p {
+	margin: 0;
+	font: inherit;
+}
