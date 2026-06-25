@@ -81,7 +81,7 @@ p {
 	right: 1.25rem;
 	z-index: 10;
 	font-family: "kaushan";
-	font-size: 2rem;
+	font-size: 1.5rem;
 	line-height: 1.5;
 	text-align: right;
 }
@@ -100,7 +100,7 @@ p {
 	margin-left: auto;
 	max-width: 70rem;
 	font-family: "kaushan";
-	font-size: 2rem;
+	font-size: 1.5rem;
 	line-height: 1.4;
 	text-align: right;
 }
@@ -122,7 +122,7 @@ p {
 	.top-right-link {
 		top: 0.75rem;
 		right: 0.85rem;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	.bottom-bar {
 		padding: 1rem 0.85rem;
@@ -165,7 +165,7 @@ p {
 .bottom-left {
 	max-width: 30rem;
 	font-family: "kaushan";
-	font-size: 2rem;
+	font-size: 1.5rem;
 	line-height: 1.4;
 	text-align: left;
 }
