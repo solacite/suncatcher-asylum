@@ -100,7 +100,7 @@ p {
 	margin-left: auto;
 	max-width: 70rem;
 	font-family: "kaushan";
-	font-size: 1.5rem;
+	font-size: 1rem;
 	line-height: 1.4;
 	text-align: right;
 }
@@ -129,7 +129,7 @@ p {
 	}
 	.bottom-right {
 		max-width: none;
-		font-size: 1.5rem;
+		font-size: 1rem;
 		line-height: 1.45;
 		text-align: right;
 	}
@@ -139,7 +139,7 @@ p {
     @media (max-width: 640px) {
 	.bottom-left {
 		max-width: none;
-		font-size: 1.5rem;
+		font-size: 1rem;
 		line-height: 1.45;
 		text-align: left;
 	}
@@ -165,7 +165,7 @@ p {
 .bottom-left {
 	max-width: 30rem;
 	font-family: "kaushan";
-	font-size: 1.5rem;
+	font-size: 1rem;
 	line-height: 1.4;
 	text-align: left;
 }
